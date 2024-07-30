@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai Clone</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Playwrite+AU+QLD:wght@100..400&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Aleo:wght@600&family=Nunito:ital,wght@1,212&family=Playwrite+AU+QLD&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+AU+QLD&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a  href="http://web.archive.org/web/20221117021714/https://www.hellobonsai.com/"><img class="logo" src="./images/bonsai logo.svg"></a>
+        <ul class="nav-options">
+            <li id="item" class="hover">Product<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" style="fill: #3d3e4b75; transform: translate(2px,7px)"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                <ul>
+                    <li id="dropdown" class="hiddenl">
+                        <div class="hidden flex">
+                            <div id="dropdown-two" class="padding">
+                              <div>
+                                  <h6>Bonsai Workflow</h6>
+                                  <p class="margin">Look professional, win more clients and manage your business from one place</p>
+                              </div>
+                              <div>
+                                  <i id="chevron" class="fa fa-chevron-right"></i>
+                              </div>
+                              
+                          </div>
+                          <hr>
+                          
+                          <div class="padding">
+                             <h6>Bonsai Workflow</h6>
+                             <p>Look professional, win more clients and    manage your business from one place</p>
+                             <hr>
+                           </div>
+                            
+                            <div class="padding">
+                                <h6>Bonsai Workflow</h6>
+                                <p>Look professional, win more clients and    manage your business from one place</p>
+                           </div>
+
+                        </div>
+                    </li>
+                </ul>
+        </li>
+            <li id="item" class="hover">Templates<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" style="fill: #3d3e4b75; transform: translate(2px,7px)"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg></li>
+            <li class="fix">Pricing</li>
+            <li class="fix">Reviews</li>
+        </ul>
+        <div class="nav-buttons">
+            <a  href="#">log in</a>
+            <a  class="free" href="#">start free</a>
+        </div>
+        <input type="checkbox" onclick="changeButton()" id="menu">
+        <label for="menu"><svg id="menuButton" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            <svg id="cancelButton" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg></label>
+                <nav class="sidebar">
+                    <img src="./images/small logo.svg">
+                    <div class="elements">
+                        <div class="element">
+                            <h3>Product</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="element">
+                            <h3>Templates</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="element">
+                            <h3>Pricing</h3>
+                        </div>
+                        <div class="element">
+                            <h3>Reiews</h3>
+                        </div>
+                        <div class="buttons">
+                            <a class="login" href="#">log in</a>
+                            <a  class="free" href="#">start free</a>
+                        </div>
+                    </div>
+                </nav>
+    </nav>
+    <section class="pricing-section color">
+        <div class="header">
+            <div>
+              <h5>Plans & Pricing</h5>
+            </div>
+            <div class="right-side">
+              <p><span id="spanElementOne">monthly</span></p>
+              <div class="toggle">
+                <input class="fir" type="checkbox" id="check">
+                <label for="check" onclick="changeContent()" class="button"></label>
+              </div>
+              <p><span id="spanElementTwo">yearly</span></p>
+              <img class="pic" src="./images/2 months free img.svg">
+            </div>
+        </div>
+        <div class="container">
+            <div class="option-one">
+                <div class="description">
+                    <div class="disHeader">Starter</div>
+                    <p class="text">Ideal for freelancers and contractors just starting out.</p>
+                    <div><span id="moneyOne" class="money">17$</span>/month</div>
+                    <div class="hr">Billed yearly</div>
+                </div>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>All Templates</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Unlimited clinets & projects</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Invoicing & Payments</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Proposals & Contracts</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Tasks & Time Tracking</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Client CRM</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Expense Tracking</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Up to 5 Project Collaborators</p>
+                    </div>
+                </div>
+                <button class="free two">START FREE</button>
+            </div>
+          
+        
+            <div id="option" class="option-one">
+                <div class="description">
+                    <div class="row">
+                       <div class="disHeader">Professional</div>
+                       <div class="edit">MOST POPULAR</div>
+                    </div>
+                    <p class="text">Everything a growing independent business needs to thrive</p>
+                    <div><span id="moneyTwo" class="money">32$</span>/month</div>
+                    <div class="hrTwo">Billed yearly</div>
+                </div>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Everything in Starter plus...</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Custom Branding</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Forms & Questionnaires</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Workflow Automations</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Client Portal</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Calendly Integration</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Zapier Integration</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <p>Up to 15 Project Collaborators</p>
+                    </div>
+                </div>
+                <button class="free two">START FREE</button>
+            </div>
+        </div>
+    </section>
+    <section class="addons">
+        <div class="main">Super charge your work with add ons</div>
+        <div class="details-container">
+            <div class="detail">
+                <div class="sideOne">
+                  <div class="he">Collaborators</div>
+                  <p>Invite other users to specific projects for limited access and functionality.</p>
+                </div>
+                <div class="sideTwo">
+                    <div class="money moveA">free</div>
+                </div>
+            </div>
+                <div class="detail">
+                    <div class="sideOne">
+                      <div class="he">Partners</div>
+                      <p>Invite other users for full account access and company management.</p>
+                    </div>
+                    <div class="sideTwo">
+                        <div class="money move">$9</div>
+                        <p>/MONTH</p>
+                   </div>
+                </div>
+                <div class="detail">
+                        <div class="sideOne">
+                          <div class="he">Bonsai Tax</div>
+                          <p>Track expenses, identify write-offs, and estimate quarterly taxes easily.</p>
+                          <a class="learn" href="#">LEARN MORE</a>
+                        </div>
+                        <div class="sideTwo">
+                            <div class="money moveTwo">$10</div>
+                            <p>/MONTH</p>
+                        </div>
+                </div>
+         </div>
+    </section>
+    <section class="fasel">
+        <div class="fasel-container">
+           <h3>It’s <span>your</span> business.
+            We’re here to help it grow.</h3>
+           <button class="free three">START FREE</button>
+        </div>
+    </section>
+    <section class="questions">
+       <div class="big-container">
+         <div class="main center">Frequently Asked Questions</div>
+          <div class="question">
+            <div class="quest">
+                <h3 class="title">How does the free trial work?</h3>
+
+                <svg class="chevrond" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+            </div>
+            <div class="answer">
+                <p class="text-answer">When you start your trial with Bonsai you'll receive full, unlimited access to all of Bonsai's Workflow or Workflow Plus Features! You will need to enter your credit card information to begin your trial, but don't worry - we won't charge you anything until the subscription ends! If you wish to cancel at any time during the trial period, you can do so through your Subscriptions Settings Page.</p>
+            </div>
+          </div>
+          <div class="question">
+            <div class="quest">
+                <h3 class="title">Can I change plans anytime?</h3>
+
+                <svg class="chevrond" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+            </div>
+            <div class="answer">
+                <p class="text-answer">Yes, you can from within your account. If you have already subscribed to a plan, or want to downgrade or upgrade your current one, you can do this by going to your "Settings" and "Subscription".</p>
+            </div>
+          </div>
+          <div class="question">
+            <div class="quest">
+                <h3 class="title">How do I pause my Bonsai subscription?</h3>
+
+                <svg class="chevrond" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+            </div>
+            <div class="answer">
+                <p class="text-answer">We totally understand that with the nature of freelancing, work ebbs and flows so you might not always need your Bonsai subscription to remain active! The good news is that you can cancel or pause your monthly subscription at any time without penalty. Once cancelled, you'll be able to continue logging in to access all your documents and even continue to use our free features, like Time Tracking! In order to cancel your subscription, login to your Bonsai account.</p>
+            </div>
+          </div>
+          <div class="question">
+            <div class="quest">
+                <h3 class="title">What is your refund policy?</h3>
+
+                <svg class="chevrond" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+            </div>
+            <div class="answer">
+                <p class="text-answer">If you contact us within 2 weeks of being charged for your subscription, we will be happy to issue a refund for you!Beyond those 2 weeks, you will need to cancel or modify the subscription from the Subscriptions Tab in Settings to avoid future charges, but refunds will not be issued. This applies to both monthly and annual plans.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="link-container">
+            <div class="linko">
+                <h4>PRODUCT</h4>
+                <div class="links">
+                    <a class="link" href="">Proposals</a>
+                    <a class="link" href="">Contracts</a>
+                    <a class="link" href="">Invoicing</a>
+                    <a class="link" href="">Client CRM</a>
+                    <a class="link" href="">Time Tracking</a>
+                    <a class="link" href="">Forms</a>
+                    <a class="link" href="">Accounting</a>
+                    <a class="link" href="">Bonsai Tax</a>
+                    <a class="link" href="">Bonsai Cash</a>
+                    <div class="space" style="height: 10px; width: 10px;"></div>
+                    <a href="" style="color: #00b289; text-decoration: none;">Pricing</a>
+                    <a class="link" href="" style="opacity: 0.7;">Bonsai Reviews</a>
+                </div>
+            </div>
+            <div class="linko">
+                <div class="link-s up">
+                    <h4>FREE RESOURCES</h4>
+                       <div class="links">
+                        <a class="link" href="">Freelance Resources</a>
+                        <a class="link" href="">Freelance Blog By Bonsai</a>
+                        <a class="link" href="">How To A Write A Contract</a>
+                        <a class="link" href="">Online Signature Maker</a>
+                        <div class="space" style="height: 10px; width: 10px;"></div>
+                        <a class="link" href="">Self-Employed Taxes Hub</a>
+                        <a class="link" href="">Self-Employed Tax Calculator</a>
+                        <a class="link" href="">Self-Employed Tax Deductions</a>
+                        <a class="link" href="">Bonsai Tax</a>
+                        <a class="link" href="">Bonsai Cash</a>
+                     </div>
+                </div>
+                <div class="link-s up">
+                    <h4>TEMPLATES</h4>
+                       <div class="links">
+                        <div class="containerOne">
+                            <div class="containerTwo">
+                              <a class="link" >Invoice Templates</a>
+                              <svg class="clicker" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                            </div>
+                            <div class="dropdown">
+                                <a class="link small" href="">Invoice Generator</a>
+                                <a class="link small" href="">Blank Invoice Template</a>
+                                <a class="link small" href="">Consultant Invoice Template</a>
+                                <a class="link small" href="">editable Invoice Template</a>
+                                <a class="link small" href="">Graphic Design Invoice</a>
+                                <a class="link small" href="">Web Design Invoice</a>
+                                <a class="link small" href="">Contractor INvoice Template</a>
+                                <a class="link small" href="">Photography Invoice Template</a>
+                                <a class="link small" href="">Self Employed Invoice Template</a>    
+                            </div>
+                        </div>
+                        <div class="containerOne">
+                            <div class="containerTwo">
+                              <a class="link" >Proposal Templates</a>
+                              <svg class="clicker" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                            </div>
+                        </div>
+                            <div class="containerOne">
+                                <div class="containerTwo">
+                                  <a class="link" >Contract Templates</a>
+                                  <svg class="clicker" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                                </div>
+                            </div>
+                                <div class="containerOne">
+                                    <div class="containerTwo">
+                                      <a class="link" >Agreement Templates</a>
+                                      <svg class="clicker" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                                    </div>
+                                </div>
+                                    <div class="containerOne">
+                                        <div class="containerTwo">
+                                          <a class="link" >Scope Of Work Templates</a>
+                                          <svg class="clicker" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                                        </div>
+                                    </div>
+                                        <div class="containerOne">
+                                            <div class="containerTwo">
+                                              <a class="link" >Quote Templates</a>
+                                              <svg class="clicker" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                                            </div>
+                                        </div>
+                        <a class="link" href="">Credit Note Templates</a>
+                        <a class="link" href="">Estimate Templates</a>
+                        <a class="link" href="">Form Templates</a>
+                     </div>
+                    </div>
+               </div>
+                    <div class="linko">
+                        <h4>BONSAI</h4>
+                        <div class="links">
+                            <a class="link" href="">About</a>
+                            <a class="link" href="">Careers</a>
+                            <a class="link" href="">Supprt</a>
+                            <a class="link" href="">Linkedin</a>
+                            <a class="link" href="">Twitter</a>
+                            <a class="link" href="">Privacy Policy</a>
+                            <a class="link" href="">Legal</a>
+                            <div class="space" style="height: 60px; width: 10px;"></div>
+                            <a class="link" href="">Affiliates</a>
+                            <a class="link" href="">Write For Us</a>
+                            <div class="space" style="height: 60px; width: 10px;"></div>
+                            <div class="containerOne">
+                                <div class="containerTwo">
+                                  <a class="link" >Coparsisons</a>
+                                  <svg class="clicker" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                                </div>
+                                <div class="dropdown">
+                                    <a class="link small" href="">Freshbook Alternativesr</a>
+                                    <a class="link small" href="">Quickbook Alternatives</a>
+                                    <a class="link small" href="">Wave vs Quickbooks</a>
+                                    <a class="link small" href="">xero vs Quickbooks</a>
+                                    <a class="link small" href="">Freshbooks vs Quicbooks</a>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
